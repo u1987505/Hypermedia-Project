@@ -1,12 +1,172 @@
 /* Made by Pol Ciendones */
-body {
+.upperPart{
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    color: #002147;
     background-color: #F5F5DC;
 }
-h1{
-    color: #002147;
-    font-family: Playfair Display;
+.lowerPart {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    color: #F5F5DC;
+    background-color: #002147;
 }
-h2{
+
+.upperPart, .lowerPart {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.upperPart-left, .lowerPart-left, .upperPart-right, .lowerPart-center, .lowerPart-right {
+    width: 30%;
+    padding: 20px;
+}
+
+.upperPart-left, .upperPart-right{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    margin-left: 5px;
+    color: #002147;
+}
+
+.upperPart h1{
+    font-size: 30px;
+}
+
+.upperPart h2{
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.image-circle {
+    display: flex;
+    justify-content: center;
+    margin-top: -230px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 50px solid #002147;
+}
+
+.lowerPart-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lowerPart-right ul li {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.lowerPart-left, .lowerPart-right {
+    color: #F5F5DC;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.lowerPart-left p, .lowerPart-right p {
+    color: #F5F5DC;
+    font-size: 20px;
+}
+
+.lowerPart-left h2, .lowerPart-right h2 {
     color: #FFD700;
-    font-family: Playfair Display;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.lowerPart-center h2{
+    color: #F5F5DC;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.lowerPart-center p{
+    color: #FFD700;
+    font-size: 20px;
+}
+
+.stars {
+  display: flex;
+}
+
+.goldStar {
+  width: 20px;
+  height: 20px;
+  background-color: gold;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+    50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+  );
+}
+
+.blackStar {
+  width: 20px;
+  height: 20px;
+  background-color: #333333;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+    50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+  );
+}
+
+.line1 {
+  width: 200px;
+  height: 8px;
+  background: linear-gradient(
+        to right,
+        #FFD700 0%,
+        #FFD700 80%,
+        #333333 80%,
+        #333333 100%
+    );
+  border-radius: 10px;    
+}
+
+.line2 {
+  width: 200px;
+  height: 8px;
+  background: linear-gradient(
+        to right,
+        #FFD700 0%,
+        #FFD700 100%,
+        #FFD700 100%
+    );
+  border-radius: 10px;    
+}
+
+.line3 {
+  width: 200px;
+  height: 8px;
+  background: linear-gradient(
+        to right,
+        #FFD700 0%,
+        #FFD700 20%,
+        #333333 20%,
+        #333333 100%
+    );
+  border-radius: 10px;    
+}
+
+.line4 {
+  width: 200px;
+  height: 8px;
+  background: linear-gradient(
+        to right,
+        #FFD700 0%,
+        #FFD700 60%,
+        #333333 60%,
+        #333333 100%
+    );
+  border-radius: 10px;    
 }
